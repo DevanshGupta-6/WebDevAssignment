@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.stage{
+    background-color: blue;
+    width: 100vw;
+    height: 400px;
+    position: fixed;
+    text-align: center;
+}
+.ball{
+    background-color: red;
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    position: absolute;
+    bottom: 0;
+    animation: bounce 0.5s ease-out 0s infinite alternate, move 10s linear 0s infinite alternate;
+}
+
+@keyframes bounce{
+    from{
+        bottom: 0px;
+    }
+    to{
+        bottom: 70px;
+    }
+}
+@keyframes move{
+    from{
+        left: 0;
+    }
+    to{
+        left: 96.7vw;
+    }
+}
+.stage span{
+    color: white;
+    font-family: sans-serif;
+    font-size: 90px;
+    position: relative;
+    top: 20px;
+}
+.ground{
+    width: 100vw;
+    background-color: greenyellow;
+    height: 400px;
+    padding-top: 303px;
+}
