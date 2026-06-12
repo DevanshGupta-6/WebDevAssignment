@@ -1,0 +1,17 @@
+*{
+    text-align: center;
+    
+}
+.result{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 45px;
+}
+button{
+    color: white;
+    background-color: rgb(0, 0, 255);
+    padding: 10px;
+    border: none;
+    border-radius: 19px;
+}
