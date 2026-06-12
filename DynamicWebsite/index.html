@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cards</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-color: #0F0F0F;
+            color: #D1E0E0;
+        }
+        .card:hover{
+            background-color: #3f3f3f;
+        }
+        .card{
+            display: flex;
+            gap: 15px;
+            align-items: center;
+            margin: 10px 0px;
+            padding: 8px;
+            border-radius: 7px;
+        }
+        img{
+            border-radius: 7px;
+            height: 100px;
+        }
+        .duration{
+            width: 23px;
+            position: relative;
+            font-size: 15px;
+            right: -60px;
+            bottom: 25px;
+            opacity: 60%;
+            background-color: #0F0F0F;
+        }
+        .title, .stats{
+            margin: 10px 0px;
+        }
+        .stats{
+            color: grey;
+        }
+        .num, .title{
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+    </div>
+    
+    <button onclick="createCard()">Add card</button>
+    <script src="script.js"></script>
+</body>
+</html>
